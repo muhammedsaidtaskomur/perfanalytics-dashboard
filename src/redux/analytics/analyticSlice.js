@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
-const apiUrl = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_PROD_API_URL : process.env.REACT_APP_DEV_API_URL;
+const apiUrl = process.env.REACT_APP_BASE_API_URL;
 export const getAnalyticsAsync = createAsyncThunk('analytics/getAnalyticsAsync', async () => {
   const res = await axios.post(apiUrl+"/analyticsList" , {
     isLast30Minutes: true,
