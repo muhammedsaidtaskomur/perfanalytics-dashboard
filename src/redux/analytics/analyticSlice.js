@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
-axios.defaults.headers.post['Access-Control-Allow-Origin'] = getLocalUrl();
+axios.defaults.headers.post['Access-Control-Allow-Origin'] = "https://per-analytics-api.herokuapp.com";
 axios.defaults.withCredentials = true;
 axios.defaults.crossDomain = true;
 
@@ -64,12 +64,4 @@ const analyticSlice = createSlice({
     }
    
   })
-
-  function getLocalUrl() {
-    const url = window.location.href;
-    const arr = url.split('/');
-  
-    return `${arr[0]}//${arr[2]}`;
-  }
-
   export default analyticSlice.reducer;
