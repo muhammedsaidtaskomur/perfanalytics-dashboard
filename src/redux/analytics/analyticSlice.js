@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
-axios.defaults.headers.post['Access-Control-Allow-Origin'] = "https://per-analytics-api.herokuapp.com";
+axios.defaults.headers.post['Access-Control-Allow-Origin'] = "*";
 axios.defaults.withCredentials = true;
 axios.defaults.crossDomain = true;
 
