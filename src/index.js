@@ -7,7 +7,9 @@ import store from './redux/store'
 import { Provider } from 'react-redux'
 import perfanalytics from 'perfanalytics-for-trendyol-case'
 const analytics = perfanalytics();
-analytics.run();
+analytics.run({
+  url: process.env.REACT_APP_BASE_API_URL + "/analytics",
+});
 
 ReactDOM.render(
   <React.StrictMode>
