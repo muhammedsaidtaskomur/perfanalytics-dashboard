@@ -1,6 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
+axios.defaults.headers.post['Access-Control-Allow-Origin'] = getLocalUrl();
+axios.defaults.withCredentials = true;
+axios.defaults.crossDomain = true;
+
 const apiUrl = process.env.REACT_APP_BASE_API_URL;
 export const getAnalyticsAsync = createAsyncThunk('analytics/getAnalyticsAsync', async () => {
   const res = await axios.post(apiUrl+"/analyticsList" , {
@@ -60,5 +64,12 @@ const analyticSlice = createSlice({
     }
    
   })
+
+  function getLocalUrl() {
+    const url = window.location.href;
+    const arr = url.split('/');
+  
+    return `${arr[0]}//${arr[2]}`;
+  }
 
   export default analyticSlice.reducer;
