@@ -1,10 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
-axios.defaults.headers.post['Access-Control-Allow-Origin'] = "*";
-axios.defaults.withCredentials = true;
-axios.defaults.crossDomain = true;
-
 const apiUrl = process.env.REACT_APP_BASE_API_URL;
 export const getAnalyticsAsync = createAsyncThunk('analytics/getAnalyticsAsync', async () => {
   const res = await axios.post(apiUrl+"/analyticsList" , {
