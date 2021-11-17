@@ -9107,10 +9107,10 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-perfanalytics-for-trendyol-case@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/perfanalytics-for-trendyol-case/-/perfanalytics-for-trendyol-case-1.0.1.tgz#891407ff625df89695a3cee6b614fb5192627371"
-  integrity sha512-dLrB9RJzBN2dPsdZ9SDVX4pnNoT7xq+FJ7GiO2pkVFGpuY9SeIYOqrU2NS8rEY8VKbwKKSHFWQT1BLpgldd8Fg==
+perfanalytics-for-trendyol-case@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/perfanalytics-for-trendyol-case/-/perfanalytics-for-trendyol-case-1.0.2.tgz#af276a8f3f4298618d28e3b2ef0d5d1d4275b92b"
+  integrity sha512-gcADmInrxvi+xZNJv/WUlZ6B8lriX41MInBG5G2tBK2JcXhoIi91tpYNDqZqZKmb/hYKAjWkjnelGyEun8EjZw==
   dependencies:
     babel-cli "^6.26.0"
     babel-plugin-add-module-exports "^1.0.4"
