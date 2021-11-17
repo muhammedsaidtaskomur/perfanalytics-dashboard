@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.24.0",
     "chart.js": "^3.6.0",
-    "perfanalytics-for-trendyol-case": "^1.0.1",
+    "perfanalytics-for-trendyol-case": "^1.0.2",
     "react": "^17.0.2",
     "react-chartjs-2": "^3.3.0",
     "react-dom": "^17.0.2",
